@@ -1,0 +1,61 @@
+body {
+    margin: 100px 20px;
+    padding: 10px;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #111111;
+}
+
+.journey-container {
+    text-align: center;
+    width: 500px;
+    max-width: 600px;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.047);
+    border-radius: 20px;
+    box-shadow: 20px 20px 20px #000;
+    transition: all 0.5s;
+}
+
+.journey-container:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 30px 30px 30px #000;
+}
+
+h1 {
+    color: #f48c06;
+    cursor: pointer;
+    transform: scale(1.05);
+    font-weight: 800;
+    margin: 20px 10px;
+}
+
+.line {
+    width: 5px;
+    height: 100px; /* Adjust as needed */
+    background-color: #ddd;
+    margin: 0 auto;
+    position: relative;
+    opacity: 0.8;
+}
+
+.milestone {
+    position: relative;
+    top: -10px; /* Adjust to align with the line */
+}
+
+p {
+    margin: 10px 0;
+    color: #ddd;
+}
+
+h2 {
+    color: #D3A121;
+    transition: all 0.5s;
+    margin: 20px 10px;
+}

@@ -1,0 +1,61 @@
+/* Skills Section Styling */
+body{
+    background-color: #111;
+    color: #fff;
+}
+.skills-content .column{
+    width: calc(50% - 30px);
+}
+.skills-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.text span{
+    color: #F48C06;
+}
+.skills-content .left p{
+    text-align: justify;
+}
+.skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #F48C06;
+}
+.skills-content .right .html::before{
+    width: 100%;
+}
+.skills-content .right .css::before{
+    width: 90%;
+}
+.skills-content .right .js::before{
+    width: 10%;
+}
+.skills-content .right .bootstrap::before{
+    width:  80%;
+}
+.skills-content .right .mysql::before{
+    width: 50%;
+}

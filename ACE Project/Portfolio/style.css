@@ -1,0 +1,230 @@
+/*  Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    overflow-x: hidden;
+}
+/* Navbar Styling */
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+    background-color: #111;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+.logo a span{
+    color: #f48c06;
+    transition: all 0.3s ease;
+}
+.menu li{
+    list-style: none;
+    display: inline-block;
+}
+.menu li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3   s ease;
+}
+.menu li a:hover{
+    color: #f48c06;
+}
+section{
+    padding: 100px 0;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.about, 
+.services, 
+.skills, 
+.contact, 
+footer{
+    font-family: 'Poppins', sans-serif;
+}
+.about-content,
+.service-content,
+.skills-content,
+.contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+section .title{
+    width: 300px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    background: transparent;
+    color: #f48c06;
+    border: 2px solid #f48c06;
+    border-radius: 20px;
+    box-shadow: 15px 15px #f48c06;
+    font-weight: 600;
+    margin: auto;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    transition: all 0.5s;
+}
+section .title:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 20px 20px #f48c06;
+}
+/* responsive media query  */
+@media (max-width: 1104px) {
+    .about-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+@media (max-width: 991px) {
+    .max-width{
+        padding: 0 50px;
+    }
+}
+@media(max-width: 750px){
+    .home-a{
+        display: none;
+    }
+}
+@media(max-width: 700px){
+    .contact-a{
+        display: none;
+    }
+}
+@media(max-width: 550px){
+    .menu{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .menu li a{
+        font-size: 0.9em;
+        margin: 10px;
+}
+}
+@media(max-width: 450px){
+    .menu{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu li a{
+        font-size: 0.9em;
+        margin: 5px;
+}
+}
+@media (max-width: 947px){
+    .home-content .text-2{
+        font-size: 70px;
+    }
+    .home-content .text-3{
+        font-size: 35px;
+    }
+    .home-content a{
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+    .max-width{
+        max-width: 930px;
+    }
+    .about-content .column{
+        width: 100%;
+    }
+    .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about-content .right{
+        flex: 100%;
+    }
+    .serv-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+    .skills .skills-content .column,
+    .contact .contact-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+}
+@media (max-width: 690px) {
+    .max-width{
+        padding: 0 23px;
+    }
+    .home-content .text-2{
+        font-size: 60px;
+    }
+    .home-content .text-3{
+        font-size: 32px;
+    }
+    .home-content a{
+        font-size: 20px;
+    }
+    .serv-content .card{
+        width: 100%;
+    }
+}
+@media (max-width: 500px) {
+    .home-content .text-2{
+        font-size: 50px;
+    }
+    .home-content .text-3{
+        font-size: 27px;
+    }
+    .about-content .right .text,
+    .skills-content .left .text{
+        font-size: 19px;
+    }
+    .contact .right form .fields{
+        flex-direction: column;
+    }
+    .contact .right form .name,
+    .contact .right form .email{
+        margin: 0;
+    }
+    .right form .error-box{
+       width: 150px;
+    }
+}
+
+/* scroll bar styling */
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}

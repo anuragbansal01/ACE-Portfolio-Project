@@ -1,0 +1,43 @@
+/* services section styling */
+.services{
+    color:#fff;
+    background: #111;
+    height: 100vh;
+}
+.service-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service-content .card{
+    width: calc(33% - 20px);
+    min-width: 300px;
+    background: #222;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    margin: 10px;
+}
+.service-content .card:hover{
+    background: #d3a121;
+}
+.service-content .card .box{
+    transition: all 0.3s ease;
+}
+.service-content .card:hover .box{
+    transform: scale(1.05);
+}
+.service-content .card i{
+    font-size: 50px;
+    color: #d3a121;
+    transition: color 0.5s ease;
+}
+.service-content .card:hover i{
+    color: #fff;
+}
+.service-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}

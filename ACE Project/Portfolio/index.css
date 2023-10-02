@@ -1,0 +1,151 @@
+/* Home Section Styling */
+.home{
+    display: flex;
+    background: url("https://img.freepik.com/premium-vector/abstract-dark-black-liquid-background-banner-design-with-geometric-shape-elements_236657-331.jpg") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home .max-width{
+  width: 100%;
+  display: flex;
+}
+
+.home-content .text-1{
+    font-size: 27px;
+    color: #f48c06;
+    margin: 10px;
+}
+
+.home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+    color: crimson;
+    margin-bottom: 10px;
+}
+
+.home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+    margin-bottom: 10px;
+    margin-bottom: 50px;
+}
+
+.home-content .text-3 span{
+    color: #f48c06;
+    font-weight: 500;
+}
+
+.home-content a{
+    display: inline-block;
+    background: #f48c06;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid #f48c06;
+    transition: all 0.5s ease;
+}
+.home-content a:hover{
+    color: #f48c06;
+    background: none;
+    box-shadow: 10px 10px #f48c06;
+}
+
+/* About Section Styling */
+.about{
+    background-image: url(https://images.rawpixel.com/image_800/cHJpdmF0ZS9zdGF0aWMvaW1hZ2VzL3dlYnNpdGUvMjAyMi0wNS9wZi1zMTI0LWFrLTI2ODFfMi5qcGc.jpg?s=nJnrmXFHgGHvSh6PogahEWDfMfdgeWIb0oZpBmMJ7Iw);
+    background-size: cover;
+}
+
+.about-content .left{
+    width: 45%;
+}
+
+.about-content .left img{
+    height: 400px;
+    width: 400px;
+    margin: 20px;
+    object-fit: cover;
+    border-radius: 50px;
+    filter: drop-shadow(10px 2px  #f48c06);
+    transition: all 1s;
+}
+
+.about-content .left img:hover{
+    cursor: pointer;
+    filter: drop-shadow(15px 2px #f48c06);
+    transform: scale(1.05);
+    border-radius: 50%;
+}
+
+.about-content .right{
+    width: 55%;
+    padding: 20px;
+}
+
+.about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about-content .right .text span{
+    color: #f48c06;
+}
+
+.about-content .right p{
+    text-align: justify;
+}
+
+.about-content .right a{
+    display: inline-block;
+    background: #f48c06;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #f48c06;
+    transition: all 0.5s ease;
+}
+
+.about-content .right a:hover{
+    color: #f48c06;
+    background: none;
+    box-shadow: 10px 10px;
+}
+
+/* Footer Section */
+footer{
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+
+footer span a{
+    color: #f48c06;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+
+footer #heart{
+    font-size: 2em;
+    color: crimson;
+    transition: all 1s;
+}
+
+footer #heart:hover{
+    cursor: pointer;
+    color: red;
+}
